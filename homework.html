@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework & Lesson 6 Detail</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 15px; background-color: #f9fbff; color: #333; line-height: 1.6; }
+        h1, h2, h3 { color: #2c3e50; border-bottom: 2px solid #e1e8ed; padding-bottom: 5px; }
+        h1 { font-size: 1.5em; }
+        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .explanation { background: #e8f4f8; padding: 20px; border-left: 5px solid #3498db; }
+        
+        /* Layouts */
+        .flex-container { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px; }
+        .flex-half { flex: 1; min-width: 45%; }
+        
+        textarea { width: 100%; height: 200px; padding: 10px; font-family: inherit; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; resize: vertical; box-sizing: border-box; }
+        input[type="text"] { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-size: 16px; }
+        audio { width: 100%; margin-top: 5px; margin-bottom: 15px; }
+        
+        img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        iframe { width: 100%; height: 500px; border: 1px solid #ccc; border-radius: 4px; }
+        
+        .answer-box { margin-top: 15px; padding: 15px; background-color: #eafaf1; border-left: 5px solid #2ecc71; display: none; }
+        button { background-color: #3498db; color: white; border: none; padding: 12px 15px; cursor: pointer; border-radius: 4px; font-size: 16px; margin-top: 10px; width: 100%; box-sizing: border-box; }
+        button:hover { background-color: #2980b9; }
+        
+        .dictation-item { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        
+        .example-essay { background: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; margin-top: 20px; }
+        
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .flex-container { flex-direction: column; }
+            .flex-half { min-width: 100%; }
+            body { margin: 10px; }
+            .section { padding: 15px; }
+            iframe { height: 300px; }
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>📚 Dars xulosasi va Uy vazifasi</h1>
+
+    <div class="section">
+        <h2>1-Qism: Dars tushuntirishi (Lesson 6 - Process) - Batafsil</h2>
+        <div class="explanation">
+            <h3>IELTS Writing Task 1: Jarayonlarni (Process) yozish sirlari</h3>
+            <p>IELTSda "Process" ya'ni jarayon tushganda, ma'lum bir mahsulot qanday yasalishi yoki tabiatdagi sikl (masalan, suv aylanishi) beriladi. Buni to'g'ri yozish uchun sizga quyidagi 5 qadam kerak bo'ladi:</p>
+            
+            <h4>1. Zamon va Nisbat (Present Simple Passive)</h4>
+            <p>Jarayonlarda ish-harakatni <b>kim qilyotgani</b> muhim emas, <b>nima bo'layotgani</b> muhim. Shuning uchun gaplarni Majhul nisbatda (Passive Voice) yozish kerak. Qoidasi: <code>Object (Narsa) + am/is/are + V3/ed (Fe'lning 3-shakli)</code>.</p>
+            <ul>
+                <li><i>Aktiv:</i> A worker picks the tea leaves.</li>
+                <li><i>Passiv:</i> The tea leaves <b>are picked</b>. <- <b>Mana shu to'g'ri!</b></li>
+            </ul>
+            <p><b style="color: #c0392b;">DIQQAT:</b> Agar jarayon <b>tabiiy</b> bo'lsa (yomg'ir yog'ishi, quyosh chiqishi, o'simlik o'sishi), unda PASSIV ISHLATILMAYDI! <i>(The sun shines, the plants grow).</i></p>
+
+            <h4>2. Oddiy bog'lovchilar (Simple Sequencers)</h4>
+            <p>Jarayon ketma-ketligini ko'rsatish uchun gaplarni bir-biriga bog'lash kerak:</p>
+            <ul>
+                <li><b>Boshlanishiga:</b> First of all, The first step is, To begin with.</li>
+                <li><b>O'rtasiga:</b> Then, Subsequently, After that, At this point.</li>
+                <li><b>Oxiriga:</b> Finally, The last step is.</li>
+            </ul>
+
+            <h4>3. Murakkab bog'lash (Advanced joining)</h4>
+            <p>Yuqori ball olish uchun ikkita bosqich bitta gapda birlashtiriladi:</p>
+            <ul>
+                <li><b>Once + has/have been + V3:</b> <i>Once the tea <b>has been packed</b>, the boxes are then loaded...</i></li>
+                <li><b>After + V-ing / After + being + V3:</b> <i>After <b>being fixed</b>, the car worked better.</i></li>
+            </ul>
+
+            <h4>4. Qo'shimcha ma'lumot (Extra details)</h4>
+            <p>Jarayonga oydinlik kiritish uchun: <b>which</b> (qaysiki), <b>where</b> (qayerdaki), <b>in order to</b> (...qilish maqsadida) so'zlarini qo'shing. Misol: <i>...are taken to a factory, <b>where</b> they are put on the shelves.</i></p>
+
+            <h4>5. Kirish (Introduction) va Qisqa xulosa (Mini-overview)</h4>
+            <p>Insho boshida berilgan savolni o'z so'zlaringiz bilan qayta yozasiz (Paraphrase). Masalan: <i>The diagram illustrates how tea is produced.</i></p>
+            <p>Undan keyin darhol umumiy xulosa (Overview) berasiz: <i>There are 18 stages in the process, from planting the seeds to drinking a cup of tea.</i></p>
+            
+            <div class="example-essay">
+                <h4>📝 TO'LIQ INSHO NAMUNASI (Choy ishlab chiqarish jarayoni asosida)</h4>
+                <p><b>Question:</b> The pictures below show how tea is produced. They also illustrate the process of making a cup of tea.</p>
+                <p><b>Model Answer:</b></p>
+                <p>These pictures illustrate how tea is produced, and how a cup of tea is made. There are 18 stages in the diagram, from sowing the tea seeds in India and China, to enjoying a cup of tea at home.</p>
+                <p>The first step is that the tea seeds are sown, and then the sun shines, which causes the seeds to grow into plants. Once the plants have grown sufficiently, the leaves are then picked by the farmer and put into baskets. After the picking stage, the tea leaves are spread out in the sun to be dried. The tea leaves are packed into boxes and then they are loaded onto lorries, which take the boxes of tea to supermarkets.</p>
+                <p>In order to make a cup of tea, first of all you buy a box of tea and take it home. Next, you fill the kettle with water and put it on the stove to boil. Meanwhile, you put a tea bag in a cup, and once the kettle has boiled, the hot water is poured into the cup. Having been left in the cup for two minutes, the tea bag is then removed, and the tea is now ready to drink. At this point, milk and sugar can be added. The final step is that you drink a nice cup of hot tea.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2-Qism: Writing Task 1 (Ceramic Pots)</h2>
+        <p>Rasmga qarab, chap tomondagi jarayonni o'ng tomonga yozing. Tugatgach, "Javobni tekshirish" tugmasini bosib o'z inshoyingizni namunaviy (Model) insho bilan solishtiring.</p>
+        <div class="flex-container">
+            <div class="flex-half">
+                <img src="8-graph.PNG" alt="Ceramic Pots Manufacturing Process">
+            </div>
+            <div class="flex-half">
+                <textarea placeholder="Inshoyingizni shu yerga yozing... (Introduction, Overview, va Body paragraflar)"></textarea>
+                <button onclick="toggleAnswer('writing-answer')">Javobni (Model Answer) ko'rish / yashirish</button>
+                <div id="writing-answer" class="answer-box">
+                    <strong>Model Answer (Namuna):</strong><br><br>
+                    The diagram illustrates the step-by-step process of manufacturing ceramic pots. Overall, there are eleven distinct stages in this linear process, beginning with the extraction of raw materials and culminating in the finished pots.<br><br>
+                    First of all, raw materials are excavated from the earth using a large excavator. Following this, they are loaded onto a truck and delivered to a factory. At the factory, the materials undergo a crushing process using specialized machinery. Subsequently, the crushed materials are transferred into a large cylindrical vat, where they are mixed with water.<br><br>
+                    Once the mixture is ready, it is poured into moulds to form the desired shape. The moulded clay is then left to dry for a period of 4 to 6 hours. After drying, the parts are assembled into clay pots. In the next stage, the assembled pots are placed into an oven and baked at an extremely high temperature of 1,000 degrees Celsius.<br><br>
+                    After the firing process, the pots are carefully coloured by hand. Once coloured, they are fired again in a colour-firing oven to set the dye. Finally, the finished ceramic pots are ready for packaging and distribution.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3-Qism: Listening Podcasts (21-24)</h2>
+        <p>Chap tomonda PDF fayldagi savollarni o'qib, o'ng tomonda audiolarni eshiting va javoblarni kiriting. Tugatgach javoblarni tekshirishingiz mumkin.</p>
+        
+        <div class="flex-container">
+            <div class="flex-half">
+                <iframe src="poscasts/21-24 podcasts.pdf"></iframe>
+            </div>
+            <div class="flex-half">
+                
+                <h3>21. The smell of coffee</h3>
+                <audio controls><source src="poscasts/21_The smell of coffee.mp3" type="audio/mpeg"></audio>
+                <input type="text" placeholder="1-5. Test javoblari (Masalan: 1-A, 2-B...)">
+                <input type="text" placeholder="6-10. Bo'sh joylarni to'ldiring (vergul bilan ajrating)">
+                <button onclick="toggleAnswer('ans-21')">Javoblarni ko'rish</button>
+                <div id="ans-21" class="answer-box">
+                    <strong>Kutilayotgan javoblar:</strong><br>1-A, 2-B, 3-A, 4-C, 5-A<br>6. decaf (yoki instant), 7. taste, 8. chain, 9. annoyed, 10. bizarre
+                </div>
+
+                <hr>
+
+                <h3>22. Happiness</h3>
+                <audio controls><source src="poscasts/22_Happiness.mp3" type="audio/mpeg"></audio>
+                <input type="text" placeholder="1-5. Test javoblari...">
+                <input type="text" placeholder="6-10. Bo'sh joylar...">
+                <button onclick="toggleAnswer('ans-22')">Javoblarni ko'rish</button>
+                <div id="ans-22" class="answer-box">
+                    <strong>Kutilayotgan javoblar:</strong><br>1-C, 2-A, 3-C, 4-C, 5-B<br>6. taking stock, 7. more, 8. family, 9. things/stuff, 10. wealth/money
+                </div>
+
+                <hr>
+
+                <h3>23. Workaholism</h3>
+                <audio controls><source src="poscasts/23_Workaholism.mp3" type="audio/mpeg"></audio>
+                <input type="text" placeholder="1-5. Test javoblari...">
+                <input type="text" placeholder="6-10. Bo'sh joylar...">
+                <button onclick="toggleAnswer('ans-23')">Javoblarni ko'rish</button>
+                <div id="ans-23" class="answer-box">
+                    <strong>Kutilayotgan javoblar:</strong><br>1-C, 2-B, 3-A, 4-B, 5-B<br>6. 80 hours (yoki 100), 7. chore, 8. depression, 9. productivity, 10. breaks
+                </div>
+
+                <hr>
+
+                <h3>24. Pain</h3>
+                <audio controls><source src="poscasts/24_Pain.mp3" type="audio/mpeg"></audio>
+                <input type="text" placeholder="1-5. Test javoblari...">
+                <input type="text" placeholder="6-10. Bo'sh joylar...">
+                <button onclick="toggleAnswer('ans-24')">Javoblarni ko'rish</button>
+                <div id="ans-24" class="answer-box">
+                    <strong>Kutilayotgan javoblar:</strong><br>1-B, 2-B, 3-A, 4-C, 5-A<br>6. analgesia, 7. tongue/lip, 8. helmet, 9. healing, 10. empathy
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4-Qism: Dictation (Diktofonkaga yozish)</h2>
+        <p>Quyidagi audiolarni eshitib, eshitgan matningizni to'liq qilib yozib boring. (Audiolar dictation papkasidan olingan).</p>
+        
+        <div class="flex-container">
+            <div class="flex-half dictation-item">
+                <h3>16. Music and Behavior</h3>
+                <audio controls><source src="dictation/16. Music and Behavior.mp3" type="audio/mpeg"></audio>
+                <textarea placeholder="Shu yerda eshitganingizni yozing..."></textarea>
+            </div>
+            
+            <div class="flex-half dictation-item">
+                <h3>17. Rock and Roll</h3>
+                <audio controls><source src="dictation/17. Rock and Roll.mp3" type="audio/mpeg"></audio>
+                <textarea placeholder="Shu yerda eshitganingizni yozing..."></textarea>
+            </div>
+
+            <div class="flex-half dictation-item">
+                <h3>18. Blues and Jazz</h3>
+                <audio controls><source src="dictation/18. Blues and Jazz.mp3" type="audio/mpeg"></audio>
+                <textarea placeholder="Shu yerda eshitganingizni yozing..."></textarea>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
